@@ -1,0 +1,26 @@
+ there is two ways to prove that fast melbo works
+ one is the unit testing, the other is showing the same 
+ backdoor elicitation vectors as the original method.
+ And I can just do that
+ therefore, 
+ - a file with the code
+ - a file for backdoor validation
+ - a file for performance comparison
+ - a readme
+
+ in the readme, mention:
+ - installation
+    - pip install fast-melbo
+    - or just copy paste the file into your project
+ - added features
+    - support for models loaded in half precision
+    - much faster
+    - No support for orthogonal vectors
+- the reason we didn't add this to the original repo
+    is because we are in the sleeper agents project
+    and may continue working on this method and modifying it 
+    further in the future. One avenue maybe to add support for
+    orthogonal vectors (we are pretty happy with vectors not supporting)
+    this for now, however, we may revisit this in the future and
+    take insipiration from this
+- link to performance comparison notebook

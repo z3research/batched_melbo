@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "fast_melbo"
+  site-url: "https://z3research.github.io/fast_melbo"
+  description: "Optimising unsupervised steering vector (a.k.a MELBO) training"
+  repo-branch: main
+  repo-url: "https://github.com/z3research/fast_melbo"

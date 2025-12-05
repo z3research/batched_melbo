@@ -5,8 +5,9 @@ requires = [
 ]
 build-backend = "setuptools.build_meta"
 [project]
-name = "unsupervised_steering_vectors"
+name="fast_melbo"
 version = "0.1.0"
+description = "Optimising unsupervised steering vector (a.k.a MELBO) training"
 dependencies = [
     "transformers==4.39.2",
     "torch>=2.2.1",
@@ -18,4 +19,9 @@ dependencies = [
     "einops>=0.8.1",
     "accelerate>=1.12.0",
     "matplotlib>=3.10.7",
+]
+
+[dependency-groups]
+dev = [
+    "nbdev>=2.4.6",
 ]
