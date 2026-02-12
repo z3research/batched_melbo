@@ -1,6 +1,5 @@
 unsupervised_steering_vectors.egg-info
 __pycache__
-fast_melbo.egg-info
-batched_melbo.egg-info
+*.egg-info
 dist/
 _proc
