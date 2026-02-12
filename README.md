@@ -4,7 +4,7 @@
 
 Unsupervised steering vectors (known by folk as MELBO) is an elicitation technique to uncover hidden behaviours in LLMs. However, the original implementation does not leverage GPU parallelization and trains vectors sequentially. This means training is slow and there is huge headroom for speedup.
 
-This repo, batched MELBO, trains vectors in parallel to significantly speedup training, usually OOMs more (see image below, [see full notebook](notebooks/batched_melbo_performance.ipynb)). This makes hyper-parameters sweeps practical, which we have internally observed to be paramount for studying some behaviours to be elicited.
+This repo, batched MELBO, trains vectors in parallel to significantly speedup training, usually OOMs more (see image below, [see full notebook](notebooks/batched_melbo_performance.ipynb)), while [retaining full effectiveness of the original method](notebooks/batched_melbo_validation.ipynb). This makes hyper-parameters sweeps practical, which we have internally observed to be paramount for studying some behaviours to be elicited.
 
 ![Training time comparison](notebooks/plot.png)
 _Training time comparison between original MELBO and batched MELBO across different numbers of steering vectors._
